@@ -29,3 +29,13 @@ keycloak.security-constraints[0].securityCollections[0].patterns[0]=/products/*
 GET http://localhost:9999/products
 Authorization: Bearer [access_token]
 ~~~
+
+
+
+#获取配置
+~~~
+curl http://keycloak:8080/auth/realms/bookstore/.well-known/openid-configuration
+~~~
+
+
+curl --data "grant_type=password&client_id=curl&username=user&password=password" http://localhost:8080/auth/realms/bookstore/protocol/openid-connect/token
