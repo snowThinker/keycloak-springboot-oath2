@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.snowman</groupId>
-	<artifactId>keycloak-springboot-oath2</artifactId>
+	<artifactId>keycloak-springboot-oauth2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>keycloak-springboot-oath2</name>
-	<description>keycloak-springboot-oath2</description>
+	<name>keycloak-springboot-oauth2</name>
+	<description>keycloak-springboot-oauth2</description>
 
 	<properties>
 		<keycloak.version>4.8.3.Final</keycloak.version>
@@ -37,10 +37,6 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-freemarker</artifactId>
-		</dependency>
-		<dependency>
 		    <groupId>org.keycloak</groupId>
 		    <artifactId>keycloak-spring-boot-2-starter</artifactId>
 		    <version>4.0.0.Final</version>
@@ -49,7 +45,28 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
+		
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.springframework.security</groupId>
+		    <artifactId>spring-security-web</artifactId>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.springframework.security.oauth</groupId>
+		    <artifactId>spring-security-oauth2</artifactId>
+		    <version>2.0.4.RELEASE</version>
+		</dependency>
+		
+		<dependency>
+		  <groupId>org.springframework.security</groupId>
+		  <artifactId>spring-security-oauth2-client</artifactId>
+		</dependency>
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
