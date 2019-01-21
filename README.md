@@ -23,3 +23,9 @@ keycloak.security-constraints[0].authRoles[0]=user
 #
 keycloak.security-constraints[0].securityCollections[0].patterns[0]=/products/*
 ~~~
+
+
+~~~
+GET http://localhost:9999/products
+Authorization: Bearer [access_token]
+~~~
